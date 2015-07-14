@@ -13,6 +13,7 @@ public class Compose
 	public void sendmail() throws Exception
 	{
 		Thread.sleep(5000);
+		System.out.println("hello");
 		driver.findElement(By.xpath("//*[@class='composeicon']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.id("to")).sendKeys("abcd@gmail.com");
